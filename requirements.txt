@@ -12,7 +12,7 @@ cycler==0.10.0
 decorator==5.0.7
 defusedxml==0.7.1
 entrypoints==0.3
-Flask==1.1.2
+flask
 idna==2.10
 itsdangerous==1.1.0
 ipykernel==5.5.4
