@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Car Price Prediction</title>
+  </head>
+  <body style=background-color:LightGoldenRodYellow>
+    <center>
+      <h1>Find Optimal Selling Price For Your Car</h1>
+      <br/>
+      <img src="static/car.jpg" width=400/>
+      <form action="{{ url_for('predict')}}" method="post">
+        <br/>
+        <label><b>What is the Present Showroom Price of Your Car (In Lacs)?</b></label>
+        <br/>
+        <input name="Present Price" id="Present Price" type="number" required="required"/>
+        <br/>
+        <br/>
+        <label><b>How Many Kilometers has the Car Driven?</b></label>
+        <br/>
+        <input name="Kms_Driven" id="Kms_Driven" type="number" required="required"/>
+        <br/>
+        <br/>
+        <label><b>How Many Owners has the Car Previously had? (0,1,2,3....)</b></label>
+        <br/>
+        <input name="Owner" id="Owner" type="number" required="required"/>
+        <br/>
+        <br/>
+        <label><b>How Old is the Car?</b></label>
+        <br/>
+        <input name="Age of Car" id="Age of Car" type="number" required="required"/>
+        <br/>
+        <br/>
+        <label><b>What is the Fuel Type?</b><label>
+        <br/>
+        <select name="Fuel Type" id="Fuel Type" required="required"/>
+          <option value="Petrol">Petrol</option>
+          <option value="Diesel">Diesel</option>
+          <option value="CNG">CNG</option>
+        </select>
+        <br/>
+        <br/>
+        <label><b>Are You a Dealer or Individual?</b></label>
+        <br/>
+        <select name="Seller Type" id="Seller Type" required="required"/>
+          <option value="Dealer">Dealer</option>
+          <option value="Individual">Individual</option>
+        </select>
+        <br/>
+        <br/>
+        <label><b>What is Your Car's Transmission Type?</b></label>
+        <br/>
+        <select name="Transmission Type" id="Transmission Type" required="required"/>
+          <option value="Automatic">Automatic</option>
+          <option value="Manual">Manual</option>
+        </select>
+        <br/>
+        <br/>
+        <input type="submit" value="Predict"/>
+        <br/>
+        <br/>
+        <h3>{{prediction_text}}</h3>
+        <br/>
+        <br/>
+        <p>©2021 Pushpit Kumar</p>
+      </form>
+    </center>
+  </body>
+</html>
