@@ -18,4 +18,20 @@
 * For this problem Linear Regression and RandomForest were implemented, the latter giving better results.
 
 ### 2. Dataset
+* The dataset was taken from CarDekho website and is available on Kaggle. All the cars present in the dataset are used cars.
+* The dataset contains the following features: **Name of the Car**, **Year of Purchase**,**Selling Price**, **Present Price**, **Kilometers Driven**, **Fuel Type**, **Seller Type**, **Transmission Type**, **Number of Previous Owners**.
+* [Dataset Link](https://www.kaggle.com/nehalbirla/vehicle-dataset-from-cardekho)
 
+### 3. File Structure
+├── static 
+│   ├── css
+├── templates
+│   ├── index.html
+├── app.py
+├── flight.pkl
+├── Flight_Test.xlsx
+├── Flight_Train.xlsx
+├── Notebook.ipynb
+├── Procfile
+├── requirements.txt
+```
