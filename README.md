@@ -74,7 +74,7 @@ pip install -r requirements.txt
 ### 9. Drawbacks and Future Scope
 * The model doesn't take into consideration the used cars that are no longer in production since present showroom price is needed in order to predict the selling price.
 * The model doesn't take into consideration mileage and engine capacity of the car which might have some affect on selling price of the car.
-* The app's front end has room for improvement using CSS or other styling techniques. I will be updating the application once I have learnt CSS.
+* The app's front end has room for improvement using CSS or other styling techniques. 
 * More algorithms can be used for more accurate results.
 
 ### 10. Credits
